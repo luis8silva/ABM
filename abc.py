@@ -144,7 +144,7 @@ class AbastecedoraLaUnion(Producto):
 class SalsasDoniaMary(Producto):
 	#Definicion de la clase SalsasDoniaMary
 	def __init__(self):
-		#Constructor de la clase SalsasDoniaMary
+		#Constructor de la clase Salsas Doña Mary
 		Producto.__init__(self)
 		self.__caja = None
 		self.__camion = None
