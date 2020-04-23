@@ -32,7 +32,7 @@ while True:
 	# Mostramos el menu
 	menu()
 	# solicituamos una opcion al usuario
-	opcionMenu = input("\nInserta un numero >> ")
+	opcionMenu = input("\nIngresa un numero >> ")
 	if opcionMenu=="1":
 		print("")
 		opcion = input("\nDeseas dar de alta productos de:\n\t1 - Bodega Don Julio (Fruta (piña, melon, sandia)) \n\t2 - Almacen La Esperanza (Fruta (manzana, pera, durazno)) \n\t3 - Abastecedora La Union (Sal, clavo, tomillo, mejorana) \n\t4 - Salsas Donia Mary (Salsa verde, roja, mole rojo) \n\t5 - Verduras Max (Verduras (tomate, cebolla, chile)) \n\t6 - Abastecedora Don Lupe (Verduras (lechuga, apio, pimiento)) \n")
@@ -127,7 +127,7 @@ while True:
 			with open('sal.dat','rb') as fp:
 				lista = pickle.load(fp)			
 		else:
-			print("\nError en la lectura archivo no existe ...")
+			print("\nError en la lectura el archivo no existe ...")
 						
 	elif opcionMenu=="0":
 		break
