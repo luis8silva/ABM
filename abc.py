@@ -253,12 +253,12 @@ class Prueba():
 			print("\t3 - Cambios")
 			print("\t4 - Visualizar")
 			print("\t0 - salir")
-			# solicituamos una opcion al usuario
+			# solicitamos una opcion al usuario 
 			opcionMenu = input("\nInserta un numero >> ")
 			sw.get(opcionMenu,self.otro)()
 
 	def f1(self):
-		#Altas
+		#Altas de los productos
 		print("")
 		opcion = input("\nDeseas dar de alta productos de:\n\t1 - Bodega Don Julio (Fruta (piña, melon, sandia)) \n\t2 - Almacen La Esperanza (Fruta (manzana, pera, durazno)) \n\t3 - Abastecedora La Union (Sal, clavo, tomillo, mejorana) \n\t4 - Salsas Donia Mary (Salsa verde, roja, mole rojo) \n\t5 - Verduras Max (Verduras (tomate, cebolla, chile)) \n\t6 - Abastecedora Don Lupe (Verduras (lechuga, apio, pimiento)) \n")
 		if opcion == "1":
@@ -319,7 +319,7 @@ class Prueba():
 
 
 	def f2(self):
-		#Bajas
+		#Bajas de productos
 		print("")
 		id = input("\nIdentificador a borrar?: ")
 		for i in self.__lista:
@@ -329,7 +329,7 @@ class Prueba():
 				self.__lista.remove(i)
 		
 	def f3(self):
-		#Cambios
+		#Cambios 
 		print("")
 		id = input("\nIdentificador a cambiar?: ")
 		for i in self.__lista:
@@ -356,7 +356,7 @@ class Prueba():
 		self.__db.close()
 		
 	def otro(self):
-		#En caso de no ser alguna de las opciones definidas
+		#En caso de no ser alguna de las opciones definidas 
 		print ("")
 		input("\nNo has pulsado ninguna opcion correcta...\npulsa una tecla para continuar ")
 
