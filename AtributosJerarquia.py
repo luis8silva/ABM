@@ -5,7 +5,7 @@
 # Autores: J. Luis Silva, Diego Color, Pedro Zermeño
 # Version 1.0
 
-from __future__ import print_function
+from __future__ import print_function 
 
 class AtributosJerarquia():
 	#Definicion de la clase para visualizar los atributos de una jerarquia de clases
@@ -18,7 +18,7 @@ class AtributosJerarquia():
         
 	def __repr__(self):
 		#Visualiza los atributos de una jerarquia de clases 
-		return '[%s: %s]' % (self.__class__.__name__, self.atributosJerarquia())
+        return '[%s: %s]' % (self.__class__.__name__, self.atributosJerarquia())		
 
 	def visualizaAtributosJeraquia(self):
 		#Visualiza los atributos de una jerarquia de clases
